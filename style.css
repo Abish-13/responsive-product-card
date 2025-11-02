@@ -1,0 +1,95 @@
+/* --- Basic Page Setup (for centering) --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+
+/* --- Product Card Styling --- */
+
+/* The main card container */
+.product-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures the image corners are rounded */
+    max-width: 320px; /* Max width of the card */
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* 1. Card Image */
+.card-image img {
+    width: 100%; /* Makes image fill the card width */
+    height: auto;  /* Maintains aspect ratio */
+    display: block;
+}
+
+/* 2. Card Content */
+.card-content {
+    padding: 1.5rem;
+    
+    /* Using Flexbox to organize content */
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 0.5rem 0;
+}
+
+.product-description {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+    /* flex-grow: 1 makes this element take up available space,
+       pushing the price and button to the bottom.
+    */
+    flex-grow: 1; 
+    margin: 0 0 1rem 0;
+}
+
+.product-price {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+/* 3. "Buy Now" Button */
+.btn-buy-now {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007BFF;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-buy-now:hover {
+    background-color: #0056b3;
+}
+
+/* --- Responsiveness (Optional, but good practice) --- */
+/* On very small screens, the card will just be 100% of the 
+  available width, thanks to `width: 100%` and `max-width: 320px`
+  on the `.product-card` rule. No media query is strictly needed
+  for this simple component, but it's good to know.
+*/
