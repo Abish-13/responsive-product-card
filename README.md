@@ -6,8 +6,7 @@ This is a clean, modern, and fully responsive product card component built from 
 
 This project demonstrates a strong understanding of **CSS Flexbox** for layout, responsive design principles, and modern styling techniques to create an attractive, hover-enhanced UI.
 
-**[➡️ View the Live Demo Here](https://YOUR_USERNAME.github.io/YOUR_REPOSITORY_NAME/)**
-*(Add your GitHub Pages link here after deploying)*
+**[➡️ View the Live Demo Here](https://abish-13.github.io/responsive-product-card/)**
 
 ## ✨ Features
 
